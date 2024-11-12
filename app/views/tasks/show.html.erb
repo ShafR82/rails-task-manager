@@ -1,7 +1,7 @@
-<h1>Tasks</h1>
 <div class="container">
-    <h1><%=@task.title%></h1> 
+    <h1>Tasks</h1>
+    <h2><%=@task.title%></h2> 
     <p><%=@task.details%></p>
+    <%=link_to "Back to home", tasks_path%>
+    <%=link_to "Edit task", edit_task_path%>
 </div>
-<%=link_to "Back to home", tasks_path%>
-<%=link_to "Edit task", edit_task_path%>
